@@ -1,7 +1,26 @@
-ALGORITHM algorithm_name
+ALGORITHM array-sum-two-sets
 VAR
-    // set_declarations
+tab1: array of integer[];
+tab2: array of integer[];
+i,j,n1,n2 : INTEGER
 BEGIN
-    // set_instructions
-    // algorithm's body
+read (n1)
+read (n2)
+FOR i FROM 0 TO n1-1 DO
+  read (sum1);
+END_FOR
+  FOR i FROM 0 TO n1-1 step 1 DO
+  sum1:= tab[i]+tab[i+1]
+  END_FOR
+  write (sum1)
+  END_FOR
+FOR i FROM 0 TO n2-1 DO 
+  read (tab[i]);
+END_FOR
+FOR i FROM 0 TO n2-1 DO
+  sum2:= tab[i]+tab[i+1]
+END_FOR
+  write sum2
+sum:= sum1+sum2
+  write (sum)
 END
